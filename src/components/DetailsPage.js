@@ -1,6 +1,7 @@
  import React, { Component } from 'react';
  import axios from 'axios';
  import { Helmet } from 'react-helmet';
+ import { Link } from 'react-router-dom';
 
  // In the state I have array movie which will hold the updated data for a specific movie I click on.
  //In state I have hasError which have value false but when something goes wrong in axios, in catch hasError will be set to true and then if statement will run.
@@ -73,6 +74,7 @@
                                      <td className='tdDetails'>{info.director}</td>
                                      <td className='tdDetails'>{info.rating}</td>
                                      <td className='tdDetails'>{info.description}</td>
+                                     <Link to={'/EditPage/' + info.id} ><p className='editButtonDetailpage'>Edit Movie </p> </Link>
                                  </tr>
                              )
                          })}

@@ -195,3 +195,13 @@ h4:hover {
   font-size: 50px;
 }
 
+.editButtonDetailpage {
+  color:  #66FCF1;
+  position: relative;
+  top: 40px;
+  left: 100px;
+}
+
+.editButtonDetailpage:hover {
+  color: #41B3A3;
+}
